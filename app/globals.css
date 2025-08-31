@@ -24,3 +24,37 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  @keyframes spin-around {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+
+  .rotating-glow::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 250%;
+    height: 250%;
+    background: conic-gradient(
+        from 180deg at 50% 50%,
+        transparent 0%,
+        #39ff14 50%,
+        transparent 100%
+    );
+    filter: blur(40px);
+    animation: spin-around 6s linear infinite;
+    z-index: 0;
+  }
+}
