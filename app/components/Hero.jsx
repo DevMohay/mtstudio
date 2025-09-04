@@ -32,7 +32,7 @@ const GlowText = ({ children, className = "" }) => (
 
 function Hero() {
   return (
-    <section id="home" className="relative *:min-h-[calc(100vh-128px)] rounded-2xl">
+    <section id="home" className="relative *:min-h-[calc(100vh-128px)] rounded-2xl bg-black/10 max-w-7xl mx-auto backdrop-blur-lg ">
         <div className="mx-auto max-w-7xl px-4 py-20 md:py-28 rounded-2xl">
           <motion.div
             variants={container}
