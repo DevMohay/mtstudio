@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Services from "./components/Services";
+import HowWeWork from "./components/HowWeWork";
 import {
   Code2,
   Sparkles,
@@ -136,6 +137,9 @@ export default function NeonGSS() {
 
       {/* HERO */}
       <Hero />
+
+      {/* HOW WE WORK */}
+      <HowWeWork />
 
       {/* SERVICES */}
       <Services />
