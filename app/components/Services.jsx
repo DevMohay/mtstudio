@@ -33,7 +33,7 @@ const GlowText = ({ children, className = "" }) => (
 
 function Services() {
   return (
-    <section id="services" className="relative bg-black">
+    <section id="services" className="relative lg:bg-black ">
       <div className="mx-auto">
         <div className="py-10 text-center ">
           <h2 className="text-5xl md:text-6xl lg:text-6xl font-bold">
@@ -49,15 +49,15 @@ function Services() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
-          className="grid bg-black md:grid-cols-1 lg:grid-cols-1 py-10 "
+          className="  lg:bg-black grid grid-cols-1 lg:gap-0 gap-4 mx-7 lg:mx-0  lg:grid-cols-1 py-10  "
         >
           {/* Service 1 */}
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14 px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400    border-[0.1px] lg:border-0 p-2 lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid grid-cols-2 rounded-2xl "
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <Rocket className="inline-block mr-2 size-5" />
               Web Design & Development
             </h3>
@@ -70,9 +70,9 @@ function Services() {
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14  px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400 border lg:border-0  lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid grid-cols-2 rounded-2xl" 
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <Layers className="inline-block mr-2 size-5" />
               App Design & Development
             </h3>
@@ -85,9 +85,9 @@ function Services() {
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14  px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400 border lg:border-0  lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid grid-cols-2 rounded-2xl"
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <Code2 className="inline-block mr-2 size-5" />
               Graphics Design
             </h3>
@@ -100,9 +100,9 @@ function Services() {
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14  px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400 border lg:border-0  lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid lg:grid-cols-2 rounded-2xl"
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <ShieldCheck className="inline-block mr-2 size-5" />
               Logo & Brand Identity
             </h3>
@@ -115,9 +115,9 @@ function Services() {
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14  px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400 border lg:border-0  lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid lg:grid-cols-2 rounded-2xl"
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <Zap className="inline-block mr-2 size-5" />
               UI/UX Design
             </h3>
@@ -130,9 +130,9 @@ function Services() {
           <motion.div
             variants={item}
             whileHover={{ y: -4, scale: 1.01 }}
-            className="py-14  px-40 hover:bg-emerald-400 hover:text-black grid grid-cols-2"
+            className="lg:py-14 py-6 px-4 flex flex-wrap gap-4 hover:border-emerald-400 border lg:border-0  lg:px-40 lg:hover:bg-emerald-400 lg:hover:text-black lg:grid lg:grid-cols-2 rounded-2xl"
           >
-            <h3 className="text-4xl font-bold">
+            <h3 className="lg:text-4xl text-xl md:text-3xl font-bold">
               <Sparkles className="inline-block mr-2 size-5" />
               Digital Marketing
             </h3>

@@ -138,12 +138,13 @@ export default function NeonGSS() {
       {/* HERO */}
       <Hero />
 
-      {/* HOW WE WORK */}
-      <HowWeWork />
 
       {/* SERVICES */}
       <Services />
 
+      {/* HOW WE WORK */}
+      <HowWeWork />
+      
       {/* WORK */}
       <Project />
 
