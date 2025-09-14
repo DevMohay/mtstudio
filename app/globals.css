@@ -38,6 +38,28 @@ body {
   mix-blend-mode: difference;
 }
 
+.shape{
+clip-path: path("M0% 0% H40% Q42% 0% 44% 5%  L60% 15% Q55% 12% 50% 13% H100% Q100% 15% 98% 18% V100% Q100% 100% 95% 100% H0% Q0% 100% 0% 95% V0% Q0% 0% 0% 0% Z");
+}
+
+.card-hover-effect {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(57, 255, 20, 0.3);
+  transform: translate(-50%, -50%) scale(0);
+  animation: grow 0.5s forwards;
+  z-index: 0;
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(20);
+    opacity: 0;
+  }
+}
+
 
 
 @layer utilities {
