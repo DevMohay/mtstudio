@@ -5,6 +5,8 @@ import Hero from "./components/Hero";
 import Project from "./components/Project";
 import Services from "./components/Services";
 import HowWeWork from "./components/HowWeWork";
+import WhyChoose from "./components/WhyChoose";
+import Pricing from "./components/pricing"
 import {
   Code2,
   Sparkles,
@@ -147,44 +149,13 @@ export default function NeonGSS() {
       
       {/* WORK */}
       <Project />
+      {/* PRICING */}
 
       {/* WHY CHOOSE US */}
-      <section id="why" className="relative">
-        <div className="mx-auto max-w-7xl px-4 py-16">
-          <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Why <GlowText>Choose</GlowText> GSS
-            </h2>
-            <p className="mt-2 text-neutral-400">
-              We blend aesthetics with engineering excellence.
-            </p>
-          </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              {
-                title: "Conversion-first",
-                text: "Every pixel supports a business goal—leads, signups, sales.",
-              },
-              {
-                title: "Ops ready",
-                text: "CI/CD, monitoring, backups, and docs from day one.",
-              },
-              {
-                title: "Transparent pricing",
-                text: "Fixed-scope packages + flexible retainers.",
-              },
-            ].map((b) => (
-              <div
-                key={b.title}
-                className="rounded-3xl border border-emerald-400/30 bg-neutral-900/50 p-6 shadow-[0_0_24px_rgba(57,255,20,0.15)]"
-              >
-                <h4 className="font-semibold text-neutral-100">{b.title}</h4>
-                <p className="mt-2 text-sm text-neutral-300/90">{b.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <WhyChoose />
+      {/* PRICING */}
+      <Pricing />
+     
 
       {/* CONTACT */}
       <section id="contact" className="relative">
@@ -195,6 +166,7 @@ export default function NeonGSS() {
             </h2>
             <p className="mt-2 text-neutral-400">
               Tell us a little about your project. We'll get back within 1
+                
               business day.
             </p>
           </div>
@@ -258,7 +230,7 @@ export default function NeonGSS() {
                   <Phone className="size-4 text-emerald-300" /> +880 1XXX-XXXXXX
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="size-4 text-emerald-300" /> hello@gss.studio
+                  <Mail className="size-4 text-emerald-300" /> mtbdstudio@gmail.com
                 </div>
                 <div className="hidden md:flex items-center gap-2">
                   <MapPin className="size-4 text-emerald-300" /> Dhaka,

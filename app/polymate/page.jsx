@@ -1,11 +1,11 @@
 "use client";
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import '../../app/styles.css';
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "../../app/styles.css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -30,33 +30,26 @@ export default function PolyMateStorePage() {
   ];
 
   return (
-
-
-
-
-
-
     <div className="min-h-screen bg-neutral-950 text-white">
       {/* App Banner */}
       <div className="m-auto max-w-7xl relative">
-  <Image
-    src="/poster for polymate.png"
-    alt="PolyMate Banner"
-    width={0}
-    height={0}
-    sizes="100vw"
-    className="w-full h-auto rounded-xl"
-  />
-</div>
+        <Image
+          src="/poster for polymate.png"
+          alt="PolyMate Banner"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-full h-auto rounded-xl"
+        />
+      </div>
 
-
-      <div className="px-6 max-w-5xl mx-auto -mt-16 relative z-10">
+      <div className="px-4 lg:px-6 md:px-6 max-w-5xl mx-auto -mt-16 relative z-10">
         {/* App Info Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="bg-neutral-900/80 backdrop-blur rounded-2xl shadow-lg lg:p-6 p-5 flex gap-6 items-center"
+          className="bg-neutral-900/80 backdrop-blur rounded-2xl shadow-lg lg:p-6 p-4 flex gap-6 items-center"
         >
           <Image
             src="/PolyMate logo final.png"
@@ -67,7 +60,9 @@ export default function PolyMateStorePage() {
           />
           <div className="flex-1">
             <h1 className="text-3xl font-bold">PolyMate</h1>
-            <p className="text-neutral-400 text-sm md:text-lg lg:text-lg">Smart Educational Companion</p>
+            <p className="text-neutral-400 text-sm md:text-lg lg:text-lg">
+              Smart Educational Companion
+            </p>
             <a
               href="/polymate.apk"
               target="_blank"
@@ -81,57 +76,57 @@ export default function PolyMateStorePage() {
 
         {/* Screenshots */}
         <section className="mt-10">
-      <h2 className="text-xl font-bold mb-4">Screenshots</h2>
+          <h2 className="text-xl font-bold mb-4">Screenshots</h2>
 
-      <Swiper
-        spaceBetween={20}
-        slidesPerView={"auto"}
-        centeredSlides={false}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        pagination={false}
-        navigation={false}
-        modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper pb-10"
-      >
-        {screenshots.map((src, i) => (
-          <SwiperSlide
-            key={i}
-            className="!w-auto " // যাতে ফুল width না নেয়
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={"auto"}
+            centeredSlides={false}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={false}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper pb-10"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="min-w-[200px] md:min-w-[280px] rounded-xl overflow-hidden border border-neutral-700"
-            >
-              <Image
-                src={src}
-                alt={`Screenshot ${i + 1}`}
-                width={200}
-                height={600}
-                className="object-cover"
-              />
-            </motion.div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </section>
+            {screenshots.map((src, i) => (
+              <SwiperSlide
+                key={i}
+                className="!w-auto " // যাতে ফুল width না নেয়
+              >
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: i * 0.1 }}
+                  viewport={{ once: true }}
+                  className="min-w-[200px] md:min-w-[280px] rounded-xl overflow-hidden border border-neutral-700"
+                >
+                  <Image
+                    src={src}
+                    alt={`Screenshot ${i + 1}`}
+                    width={200}
+                    height={600}
+                    className="object-cover"
+                  />
+                </motion.div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
 
         {/* About This App */}
         <section className="mt-10">
           <h2 className="text-xl font-bold mb-4">About this app</h2>
           <p className="text-neutral-300 leading-relaxed">
-            PolyMate is an all-in-one smart educational companion app,
-            specially crafted for students of{" "}
+            PolyMate is an all-in-one smart educational companion app, specially
+            crafted for students of{" "}
             <span className="text-emerald-400">
               Rangpur Polytechnic Institute
             </span>
-            . It provides instant access to essential academic resources,
-            tools, and information — all under one roof.
+            . It provides instant access to essential academic resources, tools,
+            and information — all under one roof.
           </p>
         </section>
 

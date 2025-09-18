@@ -18,7 +18,7 @@ function Footer() {
           {/* Brand + About */}
           <div>
             <h2 className="text-xl font-bold text-emerald-300 drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">
-              GSS <span className="text-neutral-400">Studio</span>
+              MTBD <span className="text-neutral-400">Studio</span>
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-neutral-400">
               We craft futuristic digital experiences with cutting-edge tech,
@@ -55,14 +55,13 @@ function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
                 <Mail className="size-4 text-emerald-300" />{" "}
-                mohayminulislamakash.com
+                mtbdstudio@gmail.com
               </li>
               <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
                 <Phone className="size-4 text-emerald-300" /> +8801518969244
               </li>
               <li className="flex items-center gap-3 hover:translate-x-1 transition-transform">
-                <MapPin className="size-4 text-emerald-300" /> Bogura, New Market,
-                Bangladesh
+                <MapPin className="size-4 text-emerald-300" /> Holding No. 306, Shop No. 00, Teghori,Shibganj,Bogura
               </li>
             </ul>
             <div className="flex gap-5 mt-6">
@@ -81,7 +80,7 @@ function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-emerald-400/20 text-center py-4 text-sm text-neutral-500">
-          © {new Date().getFullYear()} GSS Studio. All Rights Reserved.
+          © {new Date().getFullYear()} MTBD Studio. All Rights Reserved.
         </div>
       </div>
     </footer>

@@ -41,14 +41,13 @@ function HowWeWork() {
       </h1>
       {/* Heading */}
       <div
-        className="shape [clip-path:polygon(0%_0%,40%_0%,60%_15%,50%_13%,100%_13%,100%_100%,0%_100%)] bg-white px-10 py-15"
+        className="shape [clip-path:polygon(0%_0%,40%_0%,60%_15%,50%_13%,100%_13%,100%_100%,0%_100%)] bg-white px-2 py-10 lg:px-10 p lg:py-15"
       >
-        <h2 className="text-3xl md:text-6xl font-bold text-black mb-12 ">
-          How{" "}
-          <span className="text-emerald-300 drop-shadow-[0_0_8px_#39ff14]">
-            We Work?
-          </span>
-        </h2>
+        <div className="mb-10 flex flex-col lg:flex-row md:flex-row gap-2">
+          <span className="text-2xl text-black font-bold md:text-4xl lg:text-5xl">How</span>
+          <span className="text-emerald-300 drop-shadow-[0_0_8px_#39ff14] text-2xl
+          md:text-4xl lg:text-5xl">We Work?</span>
+        </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
