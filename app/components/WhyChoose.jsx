@@ -22,7 +22,7 @@ export default function WhyChoose() {
   ];
 
   return (
-    <section id="why" className="relative">
+    <section id="whyUs" className="relative">
       <div className="mx-auto max-w-7xl px-4 py-16">
         {/* Section Header */}
         <div className="mb-10 text-center">

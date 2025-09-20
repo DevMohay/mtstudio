@@ -33,7 +33,7 @@ function HowWeWork() {
 
 
   return (
-    <section id="howwework" className="relative max-w-7xl mx-auto px-6 py-16 ">
+    <section id="process" className="relative max-w-7xl mx-auto px-6 py-16 ">
       <h1 className="text-2xl md:text-3xl font-light text-center mb-12 text-neutral-300 max-w-3xl mx-auto">
         From the very first idea to the final masterpiece, we walk beside you at
         every step. Because true success isn’t a solo journey — it’s a powerful

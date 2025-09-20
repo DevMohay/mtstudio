@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import HowWeWork from "./components/HowWeWork";
 import WhyChoose from "./components/WhyChoose";
 import Pricing from "./components/pricing"
+import Contact from "./components/Contact";
 import {
   Code2,
   Sparkles,
@@ -158,95 +159,7 @@ export default function NeonGSS() {
      
 
       {/* CONTACT */}
-      <section id="contact" className="relative">
-        <div className="mx-auto max-w-3xl px-4 py-16">
-          <div className="mb-8 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              Let's build your <GlowText>vision</GlowText>
-            </h2>
-            <p className="mt-2 text-neutral-400">
-              Tell us a little about your project. We'll get back within 1
-                
-              business day.
-            </p>
-          </div>
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
-            <div className="grid gap-4 md:grid-cols-2">
-              <div>
-                <label className="mb-1 block text-sm text-neutral-300">
-                  Name
-                </label>
-                <input
-                  className="w-full rounded-2xl border border-emerald-400/30 bg-neutral-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400/60"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="mb-1 block text-sm text-neutral-300">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full rounded-2xl border border-emerald-400/30 bg-neutral-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400/60"
-                  placeholder="you@example.com"
-                />
-              </div>
-            </div>
-            <div>
-              <label className="mb-1 block text-sm text-neutral-300">
-                Project Type
-              </label>
-              <select className="w-full rounded-2xl border border-emerald-400/30 bg-neutral-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400/60">
-                <option>Website / Landing</option>
-                <option>SaaS / Web App</option>
-                <option>Mobile App</option>
-                <option>Brand & Creative</option>
-              </select>
-            </div>
-            <div>
-              <label className="mb-1 block text-sm text-neutral-300">
-                Budget
-              </label>
-              <select className="w-full rounded-2xl border border-emerald-400/30 bg-neutral-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400/60">
-                <option>$1k – $3k</option>
-                <option>$3k – $8k</option>
-                <option>$8k – $15k</option>
-                <option>$15k+</option>
-              </select>
-            </div>
-            <div>
-              <label className="mb-1 block text-sm text-neutral-300">
-                Message
-              </label>
-              <textarea
-                rows={5}
-                className="w-full rounded-2xl border border-emerald-400/30 bg-neutral-900/60 px-4 py-3 outline-none focus:ring-2 focus:ring-emerald-400/60"
-                placeholder="Tell us what you're building..."
-              />
-            </div>
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4 text-sm text-neutral-400">
-                <div className="flex items-center gap-2">
-                  <Phone className="size-4 text-emerald-300" /> +880 1XXX-XXXXXX
-                </div>
-                <div className="flex items-center gap-2">
-                  <Mail className="size-4 text-emerald-300" /> mtbdstudio@gmail.com
-                </div>
-                <div className="hidden md:flex items-center gap-2">
-                  <MapPin className="size-4 text-emerald-300" /> Dhaka,
-                  Bangladesh
-                </div>
-              </div>
-              <button
-                className="rounded-2xl bg-emerald-400/90 px-6 py-3 font-semibold text-neutral-900 shadow-[0_0_32px_rgba(57,255,20,0.5)] hover:bg-emerald-400"
-                type="submit"
-              >
-                Send Request
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
+      <Contact />
 
       {/* FOOTER */}
       <footer className="border-t border-emerald-400/20 bg-neutral-950/60 py-8"></footer>

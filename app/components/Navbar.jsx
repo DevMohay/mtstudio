@@ -14,7 +14,7 @@ export default function Navbar() {
 
   const navLinks = [
     ["Services", "#services"],
-    ["Benefits", "#benefits"],
+    ["Benefits", "#whyUs"],
     ["Portfolio", "#portfolio"],
     ["Pricing", "#pricing"],
     ["Process", "#process"],
@@ -82,7 +82,7 @@ export default function Navbar() {
           <div className="mx-auto max-w-7xl px-4 py-4">
             <div className="flex items-center justify-between">
               {/* Logo */}
-              <a href="#home" className="flex items-center gap-3 group">
+              <a href="/" className="flex items-center gap-3 group">
                 <div className="w-10 h-10 rounded-xl bg-emerald-500/20 ring-2 ring-emerald-400/40 flex items-center justify-center animate-glow">
                   <Image
                     src={logo}
@@ -94,7 +94,7 @@ export default function Navbar() {
                 </div>
                 <span className="font-semibold tracking-wide text-neutral-100 text-2xl">
                   <span className="animate-pulse-slow bg-gradient-to-r from-emerald-300 via-emerald-400 to-emerald-200 bg-clip-text text-transparent [text-shadow:_0_0_20px_rgba(57,255,20,0.75)]">
-                    MT
+                    MTBD
                   </span>{" "}
                   <span className="text-neutral-400">Studio</span>
                 </span>

@@ -62,7 +62,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="py-20 bg-black/20 backdrop-blur-sm relative">
+    <section className="py-20 bg-black/20 backdrop-blur-sm relative" id="pricing">
       <h2 className="text-4xl font-extrabold text-center text-white mb-16">
         💎 Choose Your Plan
       </h2>
@@ -109,7 +109,7 @@ export default function PricingSection() {
                 {plan.bestFor}
               </p>
 
-              <button className="mt-8 w-full py-3 rounded-xl font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-lg hover:shadow-purple-500/70 transition-all">
+              <button id="contact" className="mt-8 w-full py-3 rounded-xl font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 shadow-lg hover:shadow-purple-500/70 transition-all">
                 {plan.button}
               </button>
             </div>
