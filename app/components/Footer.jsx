@@ -18,7 +18,7 @@ function Footer() {
           {/* Brand + About */}
           <div>
             <h2 className="text-xl font-bold text-emerald-300 drop-shadow-[0_0_10px_rgba(57,255,20,0.8)]">
-              MTBD <span className="text-neutral-400">Studio</span>
+              MTBD <span className="text-neutral-400">Studio LTD.</span>
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-neutral-400">
               We craft futuristic digital experiences with cutting-edge tech,
@@ -65,13 +65,26 @@ function Footer() {
               </li>
             </ul>
             <div className="flex gap-5 mt-6">
-              {[Facebook, Twitter, Linkedin, Github].map((Icon, idx) => (
+              {[{
+                Icon: Facebook,
+                href: "https://facebook.com/mtmohay"
+              },
+              {
+                Icon: Twitter,
+                href: "https://twitter.com/mtmohay"
+              },
+              {
+                Icon: Linkedin,
+                href: "https://www.linkedin.com/in/mohayminul-islam-48624033b"
+              }
+              ].map((social, idx) => (
                 <a
                   key={idx}
-                  href="#"
+                  target="_blank"
+                  href={social.href}
                   className="p-2 rounded-xl border border-emerald-400/40 bg-neutral-900/50 shadow-[0_0_15px_rgba(57,255,20,0.4)] hover:shadow-[0_0_35px_rgba(57,255,20,0.7)] hover:scale-110 transition-all duration-500"
                 >
-                  <Icon className="size-5 text-emerald-300" />
+                  <social.Icon className="size-5 text-emerald-300" />
                 </a>
               ))}
             </div>
